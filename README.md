@@ -27,4 +27,9 @@ Stelle sicher, dass Python 3.x auf deinem Rechner installiert ist. Wenn noch nic
 Lade das Projekt runter und installiere alle notwendigen Abhängigkeiten mit:
 
 ```bash
-pip install -r requirements.txt
+matplotlib
+numpy
+pandas
+pathlib
+collections
+```

@@ -34,3 +34,6 @@ pandas
 pathlib
 collections
 ```
+```bash
+pip install requirements.txt
+

@@ -1,6 +1,6 @@
-### **Python-Dateien Scan - 2024-12-03 14:45:00**
+Python-Dateien Scan - 2024-12-03 14:45:00
 
-##### Gefundene Python-Dateien: 5
+Gefundene Python-Dateien: 5
 
 Datei: /home/user/projects/example_project/main.py
 Größe: 3,500 Bytes
@@ -36,7 +36,7 @@ Größe: 6.49 MB (6,600 Bytes)
 Anteil am Gesamtspeicher: 58.3%
 --------------------------------------------------
 
-##### **Gesamtstatistik:**
+Gesamtstatistik:
 Anzahl Python-Ordner: 2
 Gesamtgröße aller Python-Dateien: 13.81 MB (14,100 Bytes)
 Durchschnittliche Ordnergröße: 6.91 MB

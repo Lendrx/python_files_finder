@@ -26,7 +26,8 @@ Stelle sicher, dass Python 3.x auf deinem Rechner installiert ist. Wenn noch nic
 
 Lade das Projekt runter und installiere alle notwendigen Abhängigkeiten mit:
 
-```requirements.txt: 
+### **requirements.txt:**
+```bash
 matplotlib
 numpy
 pandas

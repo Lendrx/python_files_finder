@@ -1,4 +1,4 @@
-# 📂 Python File Analyzer - Entdecke deine Python-Projekte wie nie zuvor! 🚀
+# 📂 Python File Analyzer
 
 **Möchtest du wissen, welche Python-Dateien in deinem Projekt am meisten Speicher verbrauchen?**  
 Dieses Tool hilft dir dabei, Python-Dateien zu finden, deren Speicherverbrauch zu analysieren und eine detaillierte Visualisierung der Verzeichnisstrukturen zu erstellen. Es ist ideal für Entwickler, die ihre Projekte effizienter managen und tiefere Einblicke in ihre Dateigrößen gewinnen möchten.

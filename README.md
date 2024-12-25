@@ -1,39 +1,40 @@
-# 📂 Python File Analyzer
+# Python Code Finder
 
-**Möchtest du wissen, welche Python-Dateien in deinem Projekt am meisten Speicher verbrauchen?**  
-Dieses Tool hilft dir dabei, Python-Dateien zu finden, deren Speicherverbrauch zu analysieren und eine detaillierte Visualisierung der Verzeichnisstrukturen zu erstellen. Es ist ideal für Entwickler, die ihre Projekte effizienter managen und tiefere Einblicke in ihre Dateigrößen gewinnen möchten.
+## 🎯 Was macht es?
+Analysewerkzeug für Python-Projekte. Durchsucht Verzeichnisse nach Python-Dateien, erstellt detaillierte Statistiken über Größe, Änderungszeitpunkte und Verteilung von Python-Code.
 
-### Was macht dieses Tool? 🤔
+## 🛠️ Wie ist es gebaut?
+### Tech Stack:
+- Python 3.x
+- os & pathlib
+- datetime
+- collections.defaultdict
 
-Dieses Python-Skript untersucht ein Verzeichnis und alle Unterverzeichnisse und sucht nach **Python-Dateien (.py)**. Es berechnet deren Größe und gibt dir eine detaillierte Übersicht darüber, wie viel Speicherplatz in deinem Projekt durch Python-Code beansprucht wird. Aber das ist noch nicht alles!
+### Architektur-Highlights:
+1. Rekursive Verzeichnissuche
+2. Automatische Größenanalyse
+3. Detaillierte Logging-Funktionen
 
-- **Dateien analysieren**: Alle Python-Dateien werden nach Größe und Änderungsdatum aufgelistet.
-- **Speicherverbrauch anzeigen**: Ermittelt den Speicherverbrauch von Ordnern, die Python-Dateien enthalten.
-- **Daten visualisieren**: Mit einem praktischen Balkendiagramm kannst du die größten Ordner auf einen Blick erkennen.
-
-### 🔧 Funktionen
-
-- **Scannen von Python-Dateien**: Durchsuche Verzeichnisse und deren Unterverzeichnisse nach `.py`-Dateien und finde heraus, welche den meisten Speicher verbrauchen.
-- **Ordnerspeicheranalyse**: Berechne den gesamten Speicherverbrauch eines Ordners basierend auf den enthaltenen Python-Dateien.
-- **Visualisierung**: Erstelle ein interaktives Balkendiagramm, das zeigt, welche Ordner den meisten Platz beanspruchen.
-- **Einfache Ausgaben**: Speichere die Analyseergebnisse als `.txt`-Dateien für eine einfache Weiterverarbeitung.
-
-### 🚀 Wie kannst du das Tool nutzen?
-
-#### 1. Installation und Setup
-
-Stelle sicher, dass Python 3.x auf deinem Rechner installiert ist. Wenn noch nicht geschehen, lade es von [python.org](https://www.python.org/downloads/) herunter.
-
-Lade das Projekt runter und installiere alle notwendigen Abhängigkeiten mit:
-
-### **requirements.txt:**
-```bash
-matplotlib
-numpy
-pandas
-pathlib
-collections
+## 📊 Technische Features
+```python
+def find_python_files(start_path):
+    python_files = []
+    folder_sizes = defaultdict(int)
+    
+    for root, dirs, files in os.walk(start_path):
+        for file in files:
+            if file.endswith('.py'):
+                full_path = os.path.join(root, file)
+                file_size = os.path.getsize(full_path)
+                mod_time = os.path.getmtime(full_path)
+                python_files.append({
+                    'path': full_path,
+                    'size': file_size,
+                    'modified': mod_time
+                })
 ```
-```bash
-pip install requirements.txt
 
+Key Features:
+- Detaillierte Dateianalyse
+- Größenstatistiken pro Ordner
+- Automatische Report-Generierung

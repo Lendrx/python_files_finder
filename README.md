@@ -1,6 +1,6 @@
 # Python Code Finder
 
-## 🎯 Was macht es?
+## 🎯 Worum geht's?
 Analysewerkzeug für Python-Projekte. Durchsucht Verzeichnisse nach Python-Dateien, erstellt detaillierte Statistiken über Größe, Änderungszeitpunkte und Verteilung von Python-Code.
 
 ## 🛠️ Wie ist es gebaut?
